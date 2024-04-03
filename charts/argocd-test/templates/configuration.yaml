@@ -1,0 +1,12 @@
+apiVersion: meta.pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: bucket-composition
+  annotations:
+    provider: aws
+spec:
+  crossplane:
+    version: ">=v1.14.5"
+  dependsOn:
+    - provider: registry.upbound.io/crossplane/provider-aws
+      version: ">=v0.46.0"

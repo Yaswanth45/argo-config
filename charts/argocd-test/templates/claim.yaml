@@ -1,0 +1,10 @@
+apiVersion: testing.com/v1alpha1
+kind: Bucket
+metadata:
+  name: my-bucket
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  locationConstraint: us-west-2
+  deletionPolicy: Delete

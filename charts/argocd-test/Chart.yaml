@@ -1,0 +1,5 @@
+apiVersion: v2
+name: argocd-test
+version: 0.0.1
+maintainers:
+  - name: "test"
